@@ -1,0 +1,62 @@
+/* Curriculum / course detail extras */
+.course-hero-meta {
+  display: flex; flex-wrap: wrap; gap: .55rem .9rem;
+  font-size: .88rem; font-weight: 650; color: var(--ink-soft); margin: .75rem 0 1rem;
+}
+.course-hero-meta span { display: inline-flex; align-items: center; gap: .35rem; }
+.meta-chip {
+  display: inline-flex; align-items: center; gap: .35rem;
+  padding: .4rem .75rem; border-radius: 999px; background: #fff;
+  border: 1px solid var(--line); font-size: .8rem; font-weight: 700; color: var(--ink-soft);
+}
+.curriculum-module {
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+  margin-bottom: .75rem; overflow: hidden; box-shadow: var(--shadow);
+}
+.curriculum-head {
+  width: 100%; text-align: left; background: transparent; border: 0;
+  padding: 1.05rem 1.15rem; display: flex; justify-content: space-between; gap: 1rem;
+  align-items: center; cursor: pointer; font-family: var(--font);
+}
+.curriculum-head:hover { background: #fafbff; }
+.curriculum-head h3 { margin: 0; font-size: 1.02rem; }
+.curriculum-head .meta { font-size: .8rem; color: var(--muted); font-weight: 650; margin-top: .25rem; }
+.curriculum-head i.chev { transition: transform .25s var(--ease); color: var(--purple); }
+.curriculum-module.open .curriculum-head i.chev { transform: rotate(180deg); }
+.curriculum-body { display: none; border-top: 1px solid var(--line); padding: .35rem 1.15rem 1rem; }
+.curriculum-module.open .curriculum-body { display: block; }
+.chapter-row {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem;
+  padding: .75rem 0; border-bottom: 1px solid var(--line);
+}
+.chapter-row:last-child { border-bottom: 0; }
+.chapter-row ul { margin: .35rem 0 0; padding-left: 1.1rem; color: var(--ink-soft); font-size: .88rem; }
+.chapter-status { font-size: .78rem; font-weight: 750; white-space: nowrap; }
+.status-done { color: var(--success); }
+.status-progress { color: var(--warning); }
+.status-lock { color: var(--muted); }
+.req-list li { margin-bottom: .45rem; }
+.tab-nm {
+  display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.15rem;
+  border-bottom: 1px solid var(--line); padding-bottom: .65rem;
+}
+.tab-nm button {
+  border: 0; background: transparent; padding: .55rem .9rem; border-radius: 999px;
+  font-weight: 750; font-size: .88rem; color: var(--muted); cursor: pointer; font-family: var(--font);
+}
+.tab-nm button.active { background: var(--grad-soft); color: var(--purple); }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+.download-item {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: .85rem 0; border-bottom: 1px solid var(--line);
+}
+.download-item:last-child { border-bottom: 0; }
+.progress-stats {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: .65rem;
+}
+.progress-stat {
+  background: #f8fafc; border: 1px solid var(--line); border-radius: 12px; padding: .75rem;
+  font-size: .82rem;
+}
+.progress-stat strong { display: block; font-size: 1.05rem; font-family: var(--display); margin-top: .15rem; }

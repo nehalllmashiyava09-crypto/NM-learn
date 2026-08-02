@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Host Live Class · Teacher | NM Learn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/exam-live.css">
+</head>
+<body>
+  <div id="app-shell" data-role="teacher" data-page="live-classes.html">
+    <div id="liveRoot" data-role="teacher">
+      <div class="live-perm-banner">
+        <span class="ok"><i class="bi bi-shield-check"></i> Teacher host mode: full session control enabled</span>
+        <span>Students may join only — they cannot host or create meetings</span>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-lg-8">
+          <div class="live-stage" data-live-stage style="position:relative">
+            <div class="live-status-line">
+              <span class="badge-danger badge-nm">HOSTING</span>
+              <span class="badge-nm" style="background:rgba(255,255,255,.15);color:#fff" data-live-status>Session live</span>
+            </div>
+            <div class="text-center p-4">
+              <h2 style="color:#fff;font-size:1.35rem">Full Stack Saturday Lab</h2>
+              <p style="color:rgba(255,255,255,.75)">Waiting room · Attendance · Recording ready</p>
+              <div class="d-flex justify-content-center gap-2 flex-wrap mt-2">
+                <div class="avatar">AM</div>
+                <div class="avatar" style="background:#334155">P</div>
+                <div class="avatar" style="background:#334155">R</div>
+                <div class="avatar" style="background:#334155">+18</div>
+              </div>
+              <div class="wb-canvas" data-whiteboard hidden>Digital whiteboard · draw / explain here</div>
+            </div>
+          </div>
+
+          <div class="live-toolbar">
+            <button class="btn-nm btn-outline-nm btn-sm-nm" type="button" data-live-action="mic" data-allowed="true"><i class="bi bi-mic"></i> Mic</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm" type="button" data-live-action="cam" data-allowed="true"><i class="bi bi-camera-video"></i> Camera</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm" type="button" data-live-action="muteall" data-allowed="true"><i class="bi bi-mic-mute"></i> Mute all</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm" type="button" data-live-action="share" data-allowed="true"><i class="bi bi-display"></i> Screen share</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm" type="button" data-live-action="board" data-allowed="true"><i class="bi bi-easel"></i> Whiteboard</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm" type="button" data-live-action="record" data-allowed="true"><i class="bi bi-record-circle"></i> Record</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm" type="button" data-live-action="waiting" data-allowed="true"><i class="bi bi-door-open"></i> Waiting room</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm" type="button" data-live-action="attendance" data-allowed="true"><i class="bi bi-calendar-check"></i> Attendance</button>
+            <a class="btn-nm btn-danger-nm btn-sm-nm" href="live-classes.html">End class</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="chat-panel mb-3">
+            <div class="card-pad" style="border-bottom:1px solid var(--line)"><strong>Chat & raised hands</strong></div>
+            <div class="chat-messages" data-chat-messages>
+              <div class="chat-bubble"><strong>System:</strong> Priya raised hand</div>
+              <div class="chat-bubble"><strong>Rahul:</strong> Can you open the whiteboard for Flexbox?</div>
+            </div>
+            <div class="chat-input">
+              <input class="form-control" data-chat-input placeholder="Message students...">
+              <button class="btn-nm btn-primary-nm btn-sm-nm" type="button" data-chat-send>Send</button>
+            </div>
+          </div>
+          <div class="card-nm card-pad static">
+            <h3 style="font-size:1rem">Host permissions (active)</h3>
+            <div class="participant-row"><span>Start / end live class</span><strong style="color:var(--success)">Yes</strong></div>
+            <div class="participant-row"><span>Screen share</span><strong style="color:var(--success)">Yes</strong></div>
+            <div class="participant-row"><span>Whiteboard</span><strong style="color:var(--success)">Yes</strong></div>
+            <div class="participant-row"><span>Record class</span><strong style="color:var(--success)">Yes</strong></div>
+            <div class="participant-row"><span>Mute students</span><strong style="color:var(--success)">Yes</strong></div>
+            <div class="participant-row"><span>Waiting room & attendance</span><strong style="color:var(--success)">Yes</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/exam-live.js"></script>
+</body>
+</html>

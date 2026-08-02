@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Web Development Bootcamp | NM Learn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/course.css">
+</head>
+<body>
+  <div id="app-shell" data-role="student" data-page="courses.html">
+
+    <div class="card-nm static overflow-hidden mb-3">
+      <div class="row g-0">
+        <div class="col-lg-4">
+          <div class="course-thumb h-100" style="min-height:260px;background:linear-gradient(145deg,#6d28d9,#2563eb);display:grid;place-items:center;color:#fff;padding:1.5rem;text-align:center">
+            <div>
+              <div style="font-size:2.5rem;margin-bottom:.5rem"><i class="bi bi-code-slash"></i></div>
+              <div style="font-family:var(--display);font-weight:800;font-size:1.2rem">Full Stack Bootcamp</div>
+              <div style="opacity:.85;font-size:.9rem;margin-top:.35rem">Beginner → Advanced</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 card-pad">
+          <div class="d-flex flex-wrap gap-2 mb-2">
+            <span class="badge-nm">Programming</span>
+            <span class="badge-success badge-nm">Certificate</span>
+            <span class="badge-info badge-nm">Live Saturdays</span>
+            <span class="badge-warning badge-nm">Monthly Exams</span>
+          </div>
+          <h1 style="font-size:clamp(1.4rem,3vw,1.85rem)">Complete Full Stack Web Development Bootcamp</h1>
+          <p style="margin-bottom:.5rem">Learn everything required to become a professional Full Stack Web Developer — HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Git, deployment, and real-world projects.</p>
+          <div class="course-hero-meta">
+            <span><i class="bi bi-clock"></i> 6 Months</span>
+            <span><i class="bi bi-bar-chart"></i> Beginner → Advanced</span>
+            <span><i class="bi bi-translate"></i> English</span>
+            <span><i class="bi bi-person-video3"></i> Ananya Mehta</span>
+            <span><i class="bi bi-folder2-open"></i> 12+ Projects</span>
+            <span><i class="bi bi-pencil"></i> Weekly Assignments</span>
+          </div>
+          <div class="mb-2" style="font-size:.85rem;font-weight:700;color:var(--muted)">Your progress · 34%</div>
+          <div class="progress-nm mb-3"><span style="width:34%"></span></div>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn-nm btn-primary-nm btn-sm-nm" href="learn.html"><i class="bi bi-play-fill"></i> Continue learning</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="#curriculum">Curriculum</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="live-classes.html">Live classes</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="exams.html">Monthly exams</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="certificates.html">Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-nm" role="tablist">
+      <button type="button" class="active" data-tab="overview">Overview</button>
+      <button type="button" data-tab="curriculum">Curriculum</button>
+      <button type="button" data-tab="downloads">Downloads</button>
+      <button type="button" data-tab="assignments">Assignments</button>
+      <button type="button" data-tab="exams">Monthly Exams</button>
+      <button type="button" data-tab="live">Live Classes</button>
+      <button type="button" data-tab="discussion">Discussion</button>
+      <button type="button" data-tab="certificate">Certificate</button>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div class="tab-panel active" id="tab-overview">
+      <div class="row g-3">
+        <div class="col-lg-8">
+          <div class="card-nm card-pad static mb-3">
+            <h2 style="font-size:1.15rem">Course overview</h2>
+            <p>This 6-month bootcamp takes you from beginner fundamentals to advanced full stack skills. Every module includes videos, notes, quizzes, weekly assignments, and projects. Live classes run every Saturday (teacher-hosted). Monthly exams keep you accountable.</p>
+            <div class="d-flex flex-wrap gap-2 mb-2">
+              <span class="meta-chip"><i class="bi bi-camera-video"></i> Live every Saturday</span>
+              <span class="meta-chip"><i class="bi bi-clipboard2-check"></i> Monthly exam</span>
+              <span class="meta-chip"><i class="bi bi-journal-code"></i> 12+ projects</span>
+              <span class="meta-chip"><i class="bi bi-award"></i> Certificate on completion</span>
+            </div>
+            <h3 style="font-size:1.02rem;margin-top:1.25rem">What you will learn</h3>
+            <ul>
+              <li>HTML5, CSS3, JavaScript (ES6+)</li>
+              <li>React.js for modern frontends</li>
+              <li>Node.js, Express.js & REST APIs</li>
+              <li>MongoDB & Mongoose</li>
+              <li>Authentication with JWT & roles</li>
+              <li>Git, GitHub & deployment (Vercel, Netlify, Render)</li>
+              <li>Real-world projects including a final capstone</li>
+            </ul>
+          </div>
+          <div class="card-nm card-pad static">
+            <h2 style="font-size:1.15rem">Final project options</h2>
+            <div class="grid-3">
+              <div class="progress-stat"><strong>E-commerce Website</strong>Full storefront + API</div>
+              <div class="progress-stat"><strong>Learning Management System</strong>Courses, users, progress</div>
+              <div class="progress-stat"><strong>Social Media Website</strong>Posts, auth, feeds</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card-nm card-pad static mb-3">
+            <h2 style="font-size:1.05rem">Chapter progress tracking</h2>
+            <div class="progress-stats">
+              <div class="progress-stat">✅ Completed<strong>12 chapters</strong></div>
+              <div class="progress-stat">⏳ Time spent<strong>28h 40m</strong></div>
+              <div class="progress-stat">📊 Progress<strong>34%</strong></div>
+              <div class="progress-stat">📝 Quiz avg<strong>86%</strong></div>
+              <div class="progress-stat">📄 Notes DL<strong>9 files</strong></div>
+              <div class="progress-stat">🧩 Projects<strong>3 / 12+</strong></div>
+            </div>
+          </div>
+          <div class="card-nm card-pad static">
+            <h2 style="font-size:1.05rem">Quick links</h2>
+            <div class="d-grid gap-2">
+              <a class="btn-nm btn-outline-nm btn-sm-nm" href="notes.html">PDF notes & cheat sheets</a>
+              <a class="btn-nm btn-outline-nm btn-sm-nm" href="assignments.html">Weekly assignments</a>
+              <a class="btn-nm btn-outline-nm btn-sm-nm" href="quizzes.html">Module quizzes</a>
+              <a class="btn-nm btn-outline-nm btn-sm-nm" href="discussions.html">Ask questions</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CURRICULUM -->
+    <div class="tab-panel" id="tab-curriculum">
+      <div id="curriculum">
+        <p class="mb-3">10 modules · Expand any module to view chapters, videos, quizzes, and assignments.</p>
+
+        <div class="curriculum-module open">
+          <button class="curriculum-head" type="button"><div><h3>Module 1 — Introduction to Web Development</h3><div class="meta">8 videos · Quiz (10 Q) · Assignment</div></div><i class="bi bi-chevron-down chev"></i></button>
+          <div class="curriculum-body">
+            <div class="chapter-row"><div><strong>Chapter 1</strong><ul><li>What is Web Development?</li><li>Frontend vs Backend</li><li>Full Stack Developer Roadmap</li></ul></div><span class="chapter-status status-done">✅ Completed</span></div>
+            <div class="chapter-row"><div><strong>Chapter 2</strong><ul><li>Installing VS Code</li><li>Browser Setup</li><li>Extensions</li><li>Project Structure</li></ul></div><span class="chapter-status status-done">✅ Completed</span></div>
+            <div class="chapter-row"><div><strong>Chapter 3</strong><ul><li>Internet Basics</li><li>HTTP & HTTPS</li><li>Domain & Hosting</li></ul></div><span class="chapter-status status-progress">⏳ In progress · 42%</span></div>
+            <p style="font-size:.88rem;color:var(--muted);margin:.5rem 0 0"><strong>Assignment:</strong> Install development environment.</p>
+            <a class="btn-nm btn-primary-nm btn-sm-nm mt-2" href="learn.html">Open module</a>
+          </div>
+        </div>
+
+        <div class="curriculum-module">
+          <button class="curriculum-head" type="button"><div><h3>Module 2 — HTML5</h3><div class="meta">20 videos · Quiz · Notes (PDF) · Portfolio assignment</div></div><i class="bi bi-chevron-down chev"></i></button>
+          <div class="curriculum-body">
+            <div class="chapter-row"><div><strong>Ch 1–2</strong><ul><li>HTML Structure</li><li>Headings, Paragraphs, Lists</li></ul></div><span class="chapter-status status-done">✅ Completed</span></div>
+            <div class="chapter-row"><div><strong>Ch 3–5</strong><ul><li>Images & Links</li><li>Tables</li><li>Forms</li></ul></div><span class="chapter-status status-done">✅ Completed</span></div>
+            <div class="chapter-row"><div><strong>Ch 6–8</strong><ul><li>Semantic HTML</li><li>Accessibility</li><li>Mini Project</li></ul></div><span class="chapter-status status-progress">⏳ In progress</span></div>
+            <p style="font-size:.88rem;margin:.5rem 0 0"><strong>Assignment:</strong> Portfolio Page</p>
+          </div>
+        </div>
+
+        <div class="curriculum-module">
+          <button class="curriculum-head" type="button"><div><h3>Module 3 — CSS3</h3><div class="meta">30 videos · Quiz · Notes · Restaurant Website project</div></div><i class="bi bi-chevron-down chev"></i></button>
+          <div class="curriculum-body">
+            <div class="chapter-row"><div><strong>Chapters</strong><ul><li>Selectors, Colors, Typography, Box Model</li><li>Flexbox, Grid, Position</li><li>Animation, Transition</li><li>Media Queries & Responsive Design</li></ul></div><span class="chapter-status status-lock">🔒 Locked</span></div>
+            <p style="font-size:.88rem;margin:.5rem 0 0"><strong>Project:</strong> Restaurant Website</p>
+          </div>
+        </div>
+
+        <div class="curriculum-module">
+          <button class="curriculum-head" type="button"><div><h3>Module 4 — JavaScript</h3><div class="meta">45 videos · Assignments · Quiz · 3 projects</div></div><i class="bi bi-chevron-down chev"></i></button>
+          <div class="curriculum-body">
+            <div class="chapter-row"><div><strong>Chapters</strong><ul><li>Variables, Data Types, Operators, Functions</li><li>Arrays, Objects, Loops</li><li>DOM, Events</li><li>Async JavaScript, Fetch API, ES6+</li></ul></div><span class="chapter-status status-lock">🔒 Locked</span></div>
+            <p style="font-size:.88rem;margin:.5rem 0 0"><strong>Projects:</strong> Calculator · To-do App · Weather App</p>
+          </div>
+        </div>
+
+        <div class="curriculum-module">
+          <button class="curriculum-head" type="button"><div><h3>Module 5 — React.js</h3><div class="meta">Components · Hooks · Routing · E-commerce Frontend</div></div><i class="bi bi-chevron-down chev"></i></button>
+          <div class="curriculum-body">
+            <div class="chapter-row"><div><strong>Chapters</strong><ul><li>Components, Props, State, Hooks</li><li>Routing, Forms, API Integration</li><li>Context API</li></ul></div><span class="chapter-status status-lock">🔒 Locked</span></div>
+            <p style="font-size:.88rem;margin:.5rem 0 0"><strong>Project:</strong> E-commerce Frontend</p>
+          </div>
+        </div>
+
+        <div class="curriculum-module">
+          <button class="curriculum-head" type="button"><div><h3>Module 6 — Node.js</h3><div class="meta">Express · REST API · Auth · Student Management API</div></div><i class="bi bi-chevron-down chev"></i></button>
+          <div class="curriculum-body">
+            <div class="chapter-row"><div><strong>Chapters</strong><ul><li>Node Basics, Modules, File System</li><li>Express.js, REST API</li><li>Authentication</li></ul></div><span class="chapter-status status-lock">🔒 Locked</span></div>
+            <p style="font-size:.88rem;margin:.5rem 0 0"><strong>Project:</strong> Student Management API</p>
+          </div>
+        </div>
+
+        <div class="curriculum-module">
+          <button class="curriculum-head" type="button"><div><h3>Module 7 — MongoDB</h3><div class="meta">CRUD · Mongoose · Relationships · Auth</div></div><i class="bi bi-chevron-down chev"></i></button>
+          <div class="curriculum-body">
+            <div class="chapter-row"><div><strong>Chapters</strong><ul><li>Database Basics, CRUD</li><li>Mongoose, Relationships</li><li>Authentication</li></ul></div><span class="chapter-status status-lock">🔒 Locked</span></div>
+          </div>
+        </div>
+
+        <div class="curriculum-module">
+          <button class="curriculum-head" type="button"><div><h3>Module 8 — Authentication</h3><div class="meta">Login · Register · JWT · Role-Based Auth</div></div><i class="bi bi-chevron-down chev"></i></button>
+          <div class="curriculum-body">
+            <div class="chapter-row"><div><strong>Chapters</strong><ul><li>Login & Register</li><li>JWT</li><li>Role-Based Authentication</li></ul></div><span class="chapter-status status-lock">🔒 Locked</span></div>
+          </div>
+        </div>
+
+        <div class="curriculum-module">
+          <button class="curriculum-head" type="button"><div><h3>Module 9 — Deployment</h3><div class="meta">Git · GitHub · Vercel · Netlify · Render</div></div><i class="bi bi-chevron-down chev"></i></button>
+          <div class="curriculum-body">
+            <div class="chapter-row"><div><strong>Chapters</strong><ul><li>Git & GitHub</li><li>Vercel, Netlify, Render</li></ul></div><span class="chapter-status status-lock">🔒 Locked</span></div>
+          </div>
+        </div>
+
+        <div class="curriculum-module">
+          <button class="curriculum-head" type="button"><div><h3>Module 10 — Final Project</h3><div class="meta">Capstone · Choose 1 major build</div></div><i class="bi bi-chevron-down chev"></i></button>
+          <div class="curriculum-body">
+            <div class="chapter-row"><div><strong>Build one</strong><ul><li>Complete E-commerce Website</li><li>OR Learning Management System</li><li>OR Social Media Website</li></ul></div><span class="chapter-status status-lock">🔒 Locked</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DOWNLOADS -->
+    <div class="tab-panel" id="tab-downloads">
+      <div class="card-nm card-pad static">
+        <h2 style="font-size:1.15rem">Download section</h2>
+        <p>Every module includes PDF notes, source code, practice questions, assignments, cheat sheets, and recorded classes.</p>
+        <div class="download-item"><div><strong>Module 1 — PDF Notes</strong><div style="font-size:.85rem;color:var(--muted)">Introduction to Web Development</div></div><button class="btn-nm btn-outline-nm btn-sm-nm" type="button" onclick="NMLearn.showToast('Secure download started')">Download</button></div>
+        <div class="download-item"><div><strong>Module 2 — HTML Cheat Sheet</strong><div style="font-size:.85rem;color:var(--muted)">PDF · Practice questions included</div></div><button class="btn-nm btn-outline-nm btn-sm-nm" type="button" onclick="NMLearn.showToast('Secure download started')">Download</button></div>
+        <div class="download-item"><div><strong>Module 2 — Portfolio starter code</strong><div style="font-size:.85rem;color:var(--muted)">ZIP source code</div></div><button class="btn-nm btn-outline-nm btn-sm-nm" type="button" onclick="NMLearn.showToast('Secure download started')">Download</button></div>
+        <div class="download-item"><div><strong>Saturday Live — Recording (latest)</strong><div style="font-size:.85rem;color:var(--muted)">Recorded class · Teacher session</div></div><a class="btn-nm btn-outline-nm btn-sm-nm" href="notes.html">Watch</a></div>
+        <div class="download-item"><div><strong>Assignment pack — Weeks 1–6</strong><div style="font-size:.85rem;color:var(--muted)">PDF briefs</div></div><button class="btn-nm btn-outline-nm btn-sm-nm" type="button" onclick="NMLearn.showToast('Secure download started')">Download</button></div>
+      </div>
+    </div>
+
+    <!-- ASSIGNMENTS -->
+    <div class="tab-panel" id="tab-assignments">
+      <div class="card-nm card-pad static mb-3">
+        <h2 style="font-size:1.15rem">Weekly assignments</h2>
+        <div class="table-wrap" style="border:0;box-shadow:none">
+          <table class="table-nm">
+            <thead><tr><th>Week</th><th>Assignment</th><th>Status</th><th></th></tr></thead>
+            <tbody>
+              <tr><td>Week 1</td><td>Portfolio Website</td><td><span class="badge-success badge-nm">Submitted</span></td><td><a href="assignment-submit.html">View</a></td></tr>
+              <tr><td>Week 2</td><td>Responsive Landing Page</td><td><span class="badge-success badge-nm">Graded · 92%</span></td><td><a href="assignment-submit.html">Feedback</a></td></tr>
+              <tr><td>Week 3</td><td>Calculator</td><td><span class="badge-warning badge-nm">Due soon</span></td><td><a href="assignment-submit.html">Submit</a></td></tr>
+              <tr><td>Week 4</td><td>Weather App</td><td><span class="badge-nm">Upcoming</span></td><td>—</td></tr>
+              <tr><td>Week 5</td><td>Blog Website</td><td><span class="badge-nm">Upcoming</span></td><td>—</td></tr>
+              <tr><td>Week 6</td><td>Admin Dashboard</td><td><span class="badge-nm">Upcoming</span></td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXAMS -->
+    <div class="tab-panel" id="tab-exams">
+      <div class="card-nm card-pad static">
+        <h2 style="font-size:1.15rem">Monthly exams</h2>
+        <div class="grid-3 mb-3">
+          <div class="progress-stat"><strong>Month 1</strong>50 MCQs · Practical coding test · Viva (Teacher)<br><span class="badge-success badge-nm mt-2">Passed · 81%</span></div>
+          <div class="progress-stat"><strong>Month 2</strong>Mini Project assessment<br><span class="badge-warning badge-nm mt-2">Upcoming</span></div>
+          <div class="progress-stat"><strong>Month 3</strong>Full Project review<br><span class="badge-nm mt-2">Scheduled later</span></div>
+        </div>
+        <a class="btn-nm btn-primary-nm btn-sm-nm" href="exams.html">Open exam center</a>
+      </div>
+    </div>
+
+    <!-- LIVE -->
+    <div class="tab-panel" id="tab-live">
+      <div class="card-nm card-pad static">
+        <h2 style="font-size:1.15rem">Live classes — every Saturday</h2>
+        <p>Only teachers can host live video classes, audio sessions, screen sharing, and whiteboard sessions. Students can join only — you cannot start voice/video calls.</p>
+        <div class="list-row"><div><strong>Next live class</strong><div style="font-size:.85rem;color:var(--muted)">Saturday · Full Stack Lab · Teacher-hosted</div></div><a class="btn-nm btn-primary-nm btn-sm-nm" href="live-session.html">Join when live</a></div>
+        <div class="list-row"><div><strong>Waiting room</strong><div style="font-size:.85rem;color:var(--muted)">Enabled · Attendance tracked</div></div><span class="badge-info badge-nm">Teacher control</span></div>
+        <a class="btn-nm btn-outline-nm btn-sm-nm mt-2" href="live-classes.html">View all live sessions</a>
+      </div>
+    </div>
+
+    <!-- DISCUSSION -->
+    <div class="tab-panel" id="tab-discussion">
+      <div class="card-nm card-pad static">
+        <h2 style="font-size:1.15rem">Discussion section</h2>
+        <p>Ask questions, view teacher answers, and read FAQs. Students cannot start voice or video calls from discussions.</p>
+        <div class="chat-bubble mb-2"><strong>You:</strong> When do we start Flexbox in Module 3?</div>
+        <div class="chat-bubble mb-3"><strong>Ananya (Teacher):</strong> Flexbox is in Module 3 after Box Model. Complete Module 2 mini project first.</div>
+        <div class="faq-item open"><button class="faq-q" type="button">Can students host live calls? <i class="bi bi-chevron-down"></i></button><div class="faq-a"><div class="faq-a-inner">No. Only teachers can host. Students may join teacher-hosted sessions.</div></div></div>
+        <div class="faq-item"><button class="faq-q" type="button">Where are recorded Saturday classes? <i class="bi bi-chevron-down"></i></button><div class="faq-a"><div class="faq-a-inner">In Downloads / Notes after the teacher publishes the recording.</div></div></div>
+        <a class="btn-nm btn-outline-nm btn-sm-nm mt-3" href="discussions.html">Open full discussion room</a>
+      </div>
+    </div>
+
+    <!-- CERTIFICATE -->
+    <div class="tab-panel" id="tab-certificate">
+      <div class="card-nm card-pad static">
+        <h2 style="font-size:1.15rem">Certificate requirements</h2>
+        <p>To earn the NM Learn certificate for this bootcamp, you must:</p>
+        <ul class="req-list">
+          <li>✅ Complete all chapters (100%)</li>
+          <li>✅ Submit all assignments</li>
+          <li>✅ Pass the monthly exams</li>
+          <li>✅ Complete the final project</li>
+          <li>✅ Achieve at least <strong>60% overall score</strong></li>
+        </ul>
+        <div class="progress-nm mb-2"><span style="width:34%"></span></div>
+        <p style="font-size:.88rem;color:var(--muted)">Current readiness: 34% · Certificate locked until requirements are met.</p>
+        <a class="btn-nm btn-outline-nm btn-sm-nm" href="certificates.html">View certificates</a>
+      </div>
+    </div>
+
+    <div class="card-nm card-pad static mt-3">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <div>
+          <h2 style="font-size:1.1rem;margin:0">Explore more courses</h2>
+          <p class="mb-0" style="font-size:.9rem">Frontend, Python, UI/UX, Digital Marketing, AI & more</p>
+        </div>
+        <a class="btn-nm btn-outline-nm btn-sm-nm" href="courses.html">Browse catalog</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.curriculum-head').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const mod = btn.closest('.curriculum-module');
+          mod.classList.toggle('open');
+        });
+      });
+      const tabs = document.querySelectorAll('.tab-nm button');
+      const panels = document.querySelectorAll('.tab-panel');
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          tabs.forEach((t) => t.classList.remove('active'));
+          panels.forEach((p) => p.classList.remove('active'));
+          tab.classList.add('active');
+          document.getElementById('tab-' + tab.dataset.tab)?.classList.add('active');
+        });
+      });
+      // Deep link #curriculum
+      if (location.hash === '#curriculum') {
+        tabs.forEach((t) => t.classList.remove('active'));
+        panels.forEach((p) => p.classList.remove('active'));
+        document.querySelector('[data-tab="curriculum"]')?.classList.add('active');
+        document.getElementById('tab-curriculum')?.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>

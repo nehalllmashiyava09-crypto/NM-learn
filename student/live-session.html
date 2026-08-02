@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Class · Student Join | NM Learn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/exam-live.css">
+</head>
+<body>
+  <div id="app-shell" data-role="student" data-page="live-classes.html">
+    <div id="liveRoot" data-role="student">
+      <div class="live-perm-banner">
+        <span class="ok"><i class="bi bi-check-circle-fill"></i> Allowed: Join · Mic · Camera · Raise hand · Chat</span>
+        <span class="no"><i class="bi bi-x-circle-fill"></i> Not allowed: Host call · Screen share · Whiteboard · Record · Create meeting</span>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-lg-8">
+          <div class="live-stage" data-live-stage style="position:relative">
+            <div class="live-status-line">
+              <span class="badge-danger badge-nm">LIVE</span>
+              <span class="badge-nm" style="background:rgba(255,255,255,.15);color:#fff" data-live-status>Joined as student</span>
+            </div>
+            <div class="text-center p-4">
+              <h2 style="color:#fff;font-size:1.35rem">Full Stack Saturday Lab</h2>
+              <p style="color:rgba(255,255,255,.75)">Teacher-hosted session · You can only join</p>
+              <div class="avatar mx-auto" style="width:72px;height:72px;font-size:1.3rem">AM</div>
+              <div class="mt-2" style="color:rgba(255,255,255,.85)">Host: Ananya Mehta (Teacher)</div>
+              <div class="wb-canvas" data-whiteboard hidden>Whiteboard is controlled by teacher</div>
+            </div>
+          </div>
+
+          <div class="live-toolbar">
+            <button class="btn-nm btn-outline-nm btn-sm-nm" type="button" data-live-action="mic" data-allowed="true"><i class="bi bi-mic"></i> Mic</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm" type="button" data-live-action="cam" data-allowed="true"><i class="bi bi-camera-video"></i> Camera</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm" type="button" data-live-action="hand" data-allowed="true"><i class="bi bi-hand-index"></i> Raise hand</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm is-disabled-perm" type="button" data-live-action="share" data-allowed="false" title="Teacher only"><i class="bi bi-display"></i> Screen share</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm is-disabled-perm" type="button" data-live-action="board" data-allowed="false" title="Teacher only"><i class="bi bi-easel"></i> Whiteboard</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm is-disabled-perm" type="button" data-live-action="record" data-allowed="false" title="Teacher only"><i class="bi bi-record-circle"></i> Record</button>
+            <button class="btn-nm btn-outline-nm btn-sm-nm is-disabled-perm" type="button" data-live-action="startcall" data-allowed="false" title="Teacher only"><i class="bi bi-plus-circle"></i> Start call</button>
+            <a class="btn-nm btn-danger-nm btn-sm-nm" href="live-classes.html"><i class="bi bi-x-lg"></i> Leave</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="chat-panel mb-3">
+            <div class="card-pad" style="border-bottom:1px solid var(--line)"><strong>Class chat</strong></div>
+            <div class="chat-messages" data-chat-messages>
+              <div class="chat-bubble"><strong>Ananya:</strong> Welcome. Raise hand for questions. Only I can share screen/whiteboard.</div>
+              <div class="chat-bubble"><strong>System:</strong> You joined as student. Host permissions are disabled.</div>
+            </div>
+            <div class="chat-input">
+              <input class="form-control" data-chat-input placeholder="Type a message..." aria-label="Chat message">
+              <button class="btn-nm btn-primary-nm btn-sm-nm" type="button" data-chat-send>Send</button>
+            </div>
+          </div>
+          <div class="card-nm card-pad static">
+            <h3 style="font-size:1rem">Your permissions</h3>
+            <div class="participant-row"><span>Join live class</span><strong class="ok" style="color:var(--success)">Yes</strong></div>
+            <div class="participant-row"><span>Mic / Camera / Chat</span><strong style="color:var(--success)">Yes</strong></div>
+            <div class="participant-row"><span>Raise hand</span><strong style="color:var(--success)">Yes</strong></div>
+            <div class="participant-row"><span>Start video/audio call</span><strong style="color:var(--danger)">No</strong></div>
+            <div class="participant-row"><span>Screen share / Whiteboard</span><strong style="color:var(--danger)">No</strong></div>
+            <div class="participant-row"><span>Create meeting / invite</span><strong style="color:var(--danger)">No</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+  <script src="../js/exam-live.js"></script>
+</body>
+</html>

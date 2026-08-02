@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Assignment | NM Learn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="app-shell" data-role="student" data-page="assignments.html">
+    <div class="row g-3">
+      <div class="col-lg-7">
+        <div class="card-nm card-pad static">
+          <h1 style="font-size:1.35rem">Responsive Landing Page</h1>
+          <p>Build a responsive landing page using HTML/CSS Flexbox. Upload a ZIP or PDF before the deadline.</p>
+          <div class="list-row"><span>Deadline</span><strong>Aug 4, 2026 · 11:59 PM</strong></div>
+          <div class="list-row"><span>Max score</span><strong>100</strong></div>
+          <form class="mt-3" onsubmit="event.preventDefault(); NMLearn.showToast('Assignment submitted securely.'); setTimeout(()=>location.href='assignments.html',800)">
+            <label class="form-label">Upload file</label>
+            <input class="form-control mb-3" type="file" required>
+            <label class="form-label">Notes for teacher (optional)</label>
+            <textarea class="form-control mb-3" rows="3"></textarea>
+            <button class="btn-nm btn-primary-nm" type="submit">Submit assignment</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-5">
+        <div class="card-nm card-pad static">
+          <h2 style="font-size:1.05rem">Teacher feedback</h2>
+          <p style="font-size:.92rem">Previous submission feedback will appear here after grading. Example: “Strong layout structure. Improve mobile spacing.”</p>
+          <div class="list-row"><span>Latest grade</span><strong>92% (CSS Grid Mini Project)</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>

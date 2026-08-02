@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Courses | NM Learn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/course.css">
+</head>
+<body>
+  <div id="app-shell" data-role="student" data-page="courses.html">
+    <h2 style="font-size:1.2rem;margin-bottom:.35rem">Enrolled courses</h2>
+    <p class="mb-3">Your active learning paths with progress, live classes, exams, and certificates.</p>
+
+    <div class="grid-2 mb-4">
+      <article class="card-nm">
+        <div class="course-thumb" style="background:linear-gradient(145deg,#6d28d9,#2563eb);display:grid;place-items:center;color:#fff;min-height:160px">
+          <div class="text-center"><i class="bi bi-code-slash" style="font-size:2rem"></i><div style="font-weight:800;margin-top:.4rem">Full Stack Bootcamp</div></div>
+        </div>
+        <div class="card-pad">
+          <span class="badge-nm">In progress · 34%</span>
+          <h3 class="mt-2" style="font-size:1.08rem">Complete Full Stack Web Development Bootcamp</h3>
+          <p style="font-size:.88rem">6 Months · Beginner → Advanced · English · Certificate · Live Saturdays · Monthly Exams · 12+ Projects</p>
+          <div class="progress-nm mb-2"><span style="width:34%"></span></div>
+          <div class="d-flex gap-2 mt-3">
+            <a class="btn-nm btn-primary-nm btn-sm-nm" href="course-detail.html">Open course</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="learn.html">Continue</a>
+          </div>
+        </div>
+      </article>
+      <article class="card-nm">
+        <div class="course-thumb" style="background:linear-gradient(145deg,#0f766e,#2563eb);display:grid;place-items:center;color:#fff;min-height:160px">
+          <div class="text-center"><i class="bi bi-cpu" style="font-size:2rem"></i><div style="font-weight:800;margin-top:.4rem">AI Basics</div></div>
+        </div>
+        <div class="card-pad">
+          <span class="badge-nm">In progress · 45%</span>
+          <h3 class="mt-2" style="font-size:1.08rem">AI & Machine Learning Basics</h3>
+          <p style="font-size:.88rem">6 Months · Monthly exams · Certificate</p>
+          <div class="progress-nm mb-2"><span style="width:45%"></span></div>
+          <div class="d-flex gap-2 mt-3">
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="course-detail.html">Open</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <h2 style="font-size:1.2rem;margin-bottom:.35rem">Course catalog</h2>
+    <p class="mb-3">Other learning paths available on NM Learn.</p>
+    <div class="table-wrap">
+      <table class="table-nm">
+        <thead><tr><th>Course</th><th>Duration</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Complete Full Stack Web Development</td><td>6 Months</td><td><span class="badge-success badge-nm">Enrolled</span></td></tr>
+          <tr><td>Frontend Development Masterclass</td><td>3 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>Python Programming</td><td>4 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>Java Programming</td><td>4 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>C & C++ Programming</td><td>3 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>Data Structures & Algorithms</td><td>3 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>UI/UX Design</td><td>2 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>Graphic Design</td><td>2 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>Digital Marketing</td><td>3 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>AI & Machine Learning Basics</td><td>6 Months</td><td><span class="badge-success badge-nm">Enrolled</span></td></tr>
+          <tr><td>Cyber Security Fundamentals</td><td>4 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>Data Science with Python</td><td>6 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>Mobile App Development (Flutter)</td><td>5 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>Cloud Computing (AWS Basics)</td><td>4 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>DevOps Essentials</td><td>4 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>MS Office & Advanced Excel</td><td>2 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>Spoken English & Communication Skills</td><td>2 Months</td><td><span class="badge-nm">Available</span></td></tr>
+          <tr><td>Aptitude & Interview Preparation</td><td>2 Months</td><td><span class="badge-nm">Available</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>

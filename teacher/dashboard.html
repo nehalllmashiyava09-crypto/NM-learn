@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard | NM Learn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="app-shell" data-role="teacher" data-page="dashboard.html">
+    <div class="grid-4 mb-4">
+      <div class="card-nm card-pad static stat-card"><div style="font-size:.82rem;color:var(--muted);font-weight:700">Courses</div><div class="value">3</div></div>
+      <div class="card-nm card-pad static stat-card"><div style="font-size:.82rem;color:var(--muted);font-weight:700">Students</div><div class="value">186</div></div>
+      <div class="card-nm card-pad static stat-card"><div style="font-size:.82rem;color:var(--muted);font-weight:700">To grade</div><div class="value">12</div></div>
+      <div class="card-nm card-pad static stat-card"><div style="font-size:.82rem;color:var(--muted);font-weight:700">Live this week</div><div class="value">4</div></div>
+    </div>
+    <div class="row g-3">
+      <div class="col-lg-8">
+        <div class="card-nm card-pad static mb-3">
+          <h2 style="font-size:1.15rem">Host controls</h2>
+          <p>Only teachers can start live video, audio, and group sessions. Students may join after you open the room.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn-nm btn-primary-nm btn-sm-nm" href="live-session-host.html"><i class="bi bi-camera-video"></i> Start video class</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="live-session-host.html"><i class="bi bi-mic"></i> Start audio class</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="discussions.html"><i class="bi bi-people"></i> Create discussion room</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="live-session-host.html"><i class="bi bi-easel"></i> Open whiteboard</a>
+          </div>
+        </div>
+        <div class="card-nm card-pad static">
+          <h2 style="font-size:1.1rem">Needs attention</h2>
+          <div class="list-row"><div>12 assignment submissions awaiting grades</div><a href="grades.html">Grade</a></div>
+          <div class="list-row"><div>Monthly Exam #3 schedule draft</div><a href="exams.html">Review</a></div>
+          <div class="list-row"><div>3 certificate requests ready to issue</div><a href="certificates.html">Issue</a></div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card-nm card-pad static mb-3">
+          <h2 style="font-size:1.05rem">Quick actions</h2>
+          <div class="d-grid gap-2">
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="create-course.html">Create course</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="assignments.html">Create assignment</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="quizzes.html">Create quiz</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="announcements.html">Send announcement</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="attendance.html">Mark attendance</a>
+          </div>
+        </div>
+        <div class="card-nm card-pad static">
+          <h2 style="font-size:1.05rem">Today</h2>
+          <div class="list-row"><div><strong>7:00 PM</strong><div style="font-size:.82rem;color:var(--muted)">JS Debugging Lab</div></div><span class="badge-nm">Video</span></div>
+          <div class="list-row"><div><strong>Submissions due</strong><div style="font-size:.82rem;color:var(--muted)">Landing page assignment</div></div><span class="badge-warning badge-nm">Due</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/main.js"></script>
+</body>
+</html>

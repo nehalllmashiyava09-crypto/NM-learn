@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard | NM Learn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div id="app-shell" data-role="student" data-page="dashboard.html">
+    <div class="grid-4 mb-4">
+      <div class="card-nm card-pad static stat-card"><div style="color:var(--muted);font-size:.82rem;font-weight:700">Courses</div><div class="value">4</div></div>
+      <div class="card-nm card-pad static stat-card"><div style="color:var(--muted);font-size:.82rem;font-weight:700">Avg Progress</div><div class="value">62%</div></div>
+      <div class="card-nm card-pad static stat-card"><div style="color:var(--muted);font-size:.82rem;font-weight:700">Attendance</div><div class="value">91%</div></div>
+      <div class="card-nm card-pad static stat-card"><div style="color:var(--muted);font-size:.82rem;font-weight:700">Certificates</div><div class="value">1</div></div>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-lg-8">
+        <div class="card-nm card-pad static mb-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 style="font-size:1.15rem;margin:0">Continue Learning</h2>
+            <a href="courses.html">View all</a>
+          </div>
+          <div class="list-row">
+            <div class="d-flex gap-3 align-items-center">
+              <div style="width:72px;height:48px;border-radius:10px;background:linear-gradient(145deg,#6d28d9,#2563eb);display:grid;place-items:center;color:#fff;flex-shrink:0"><i class="bi bi-code-slash"></i></div>
+              <div>
+                <strong>Full Stack Web Development Bootcamp</strong>
+                <div style="font-size:.85rem;color:var(--muted)">Module 1 · Ch 3 Internet Basics · 34% complete</div>
+                <div class="progress-nm mt-2" style="width:220px"><span style="width:34%"></span></div>
+              </div>
+            </div>
+            <a class="btn-nm btn-primary-nm btn-sm-nm" href="learn.html">Resume</a>
+          </div>
+          <div class="list-row">
+            <div class="d-flex gap-3 align-items-center">
+              <div style="width:72px;height:48px;border-radius:10px;background:linear-gradient(145deg,#0f766e,#2563eb);display:grid;place-items:center;color:#fff;flex-shrink:0"><i class="bi bi-cpu"></i></div>
+              <div>
+                <strong>AI & Machine Learning Basics</strong>
+                <div style="font-size:.85rem;color:var(--muted)">Module progress · 45% complete</div>
+                <div class="progress-nm mt-2" style="width:220px"><span style="width:45%"></span></div>
+              </div>
+            </div>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="course-detail.html">Open</a>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="card-nm card-pad static h-100">
+              <h2 style="font-size:1.05rem">Upcoming Live Classes</h2>
+              <div class="list-row"><div><strong>Full Stack Saturday Lab</strong><div style="font-size:.82rem;color:var(--muted)">Saturday · Live · Teacher-hosted</div></div><a class="btn-nm btn-sm-nm btn-outline-nm" href="live-session.html">Join</a></div>
+              <div class="list-row"><div><strong>Month 2 Mini Project briefing</strong><div style="font-size:.82rem;color:var(--muted)">Next Saturday · Audio + whiteboard</div></div><span class="badge-info badge-nm">Scheduled</span></div>
+              <p class="mb-0 mt-2" style="font-size:.8rem;color:var(--muted)"><i class="bi bi-info-circle"></i> Students can join only. Hosting is disabled.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card-nm card-pad static h-100">
+              <h2 style="font-size:1.05rem">Monthly Exam Countdown</h2>
+              <div class="text-center py-3">
+                <div style="font-family:var(--display);font-size:2.4rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;color:transparent">12d 06h</div>
+                <p class="mb-2">Full Stack Bootcamp · Month 2 Mini Project Exam</p>
+                <a class="btn-nm btn-outline-nm btn-sm-nm" href="exams.html">View exam details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card-nm card-pad static mb-3">
+          <h2 style="font-size:1.05rem">Notifications</h2>
+          <div class="list-row"><div style="font-size:.9rem">New notes uploaded in AI Fundamentals</div><span class="badge-nm">New</span></div>
+          <div class="list-row"><div style="font-size:.9rem">Assignment feedback available</div><span class="badge-success badge-nm">Done</span></div>
+          <div class="list-row"><div style="font-size:.9rem">Live class reminder · 7:00 PM</div><span class="badge-warning badge-nm">Soon</span></div>
+          <a href="notifications.html">Open notifications</a>
+        </div>
+        <div class="card-nm card-pad static mb-3">
+          <h2 style="font-size:1.05rem">Assignments Due</h2>
+          <div class="list-row"><div><strong>Responsive Landing Page</strong><div style="font-size:.8rem;color:var(--muted)">Due in 2 days</div></div><a href="assignments.html">Open</a></div>
+          <div class="list-row"><div><strong>AI Use-Case Brief</strong><div style="font-size:.8rem;color:var(--muted)">Due in 5 days</div></div><a href="assignments.html">Open</a></div>
+        </div>
+        <div class="card-nm card-pad static">
+          <h2 style="font-size:1.05rem">Quick Access</h2>
+          <div class="d-grid gap-2">
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="notes.html">Recent Notes</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="certificates.html">Certificates</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="attendance.html">Attendance</a>
+            <a class="btn-nm btn-outline-nm btn-sm-nm" href="payments.html">Payment Status</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

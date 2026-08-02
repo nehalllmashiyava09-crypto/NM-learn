@@ -1,0 +1,8 @@
+﻿User-agent: *
+Allow: /
+
+Disallow: /student/
+Disallow: /teacher/
+Disallow: /admin/
+
+Sitemap: https://www.nmlearn.com/sitemap.xml
